@@ -15,8 +15,8 @@ export default class TodoForm extends Component {
     }
 
     handleSubmit(e){
-        if(this.state.item.trim()===""){return} //prevents empty todos
         e.preventDefault();
+        if(this.state.item.trim()===""){return}  //prevents empty todos
         this.props.onFormSubmit(this.state.item);
         this.setState({item: ''});
         ReactDOM.findDOMNode(this.refs.item).focus();
