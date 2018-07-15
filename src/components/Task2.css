@@ -1,0 +1,153 @@
+.task2 {
+
+}
+
+.task2container {
+    margin: auto;
+    width: 371px;
+    text-align: center;
+}
+
+/*Buttons*/
+.vkBtn, .vkBtn:hover, .vkBtn:active, .vkBtn:visited, .vkBtn:active, .vkBtn:active:focus, .vkBtn:focus{
+    background-color: #3b5f94 !important;
+    color: white;
+    font-weight: bold;
+    width: 284px;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+.fbBtn, .fbBtn:hover, .fbBtn:active, .fbBtn:visited, .fbBtn:active, .fbBtn:active:focus, .fbBtn:focus {
+    background-color: #323c89 !important;
+    color: white;
+    font-weight: bold;
+    width: 284px;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.gpBtn, .gpBtn:hover, .gpBtn:active, .gpBtn:visited, .gpBtn:active, .gpBtn:active:focus, .gpBtn:focus {
+    background-color: #da3d2c !important;
+    color: white;
+    font-weight: bold;
+    width: 284px;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.yaBtn, .yaBtn:hover, .yaBtn:active, .yaBtn:visited, .yaBtn:active, .yaBtn:active:focus, .yaBtn:focus {
+    border-width: medium;
+    border-color: #da3d2c;
+    background-color: white !important;
+    color: black;
+    font-weight: bold;
+    width: 284px;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.yaBtn h4 {
+    display: inline;
+}
+
+.register, .register:hover, .register:active, .register:visited, .register:active, .register:active:focus, .register:focus{
+    background-color: #52ac62 !important;
+    color: white;
+    font-weight: bold;
+    width: 284px;
+    padding-top: 0;
+    padding-bottom: 0;
+    outline: none !important;
+    box-shadow: none;
+}
+
+/*Accordion*/
+.accord {
+    margin-left: 211px;
+    color: #52ac62;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+
+
+
+/*some required css for icons*/
+.mdi::before {
+    font-size: 24px;
+    line-height: 14px;
+}
+.btn .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.btn-xs .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+.btn-sm .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+.dropdown-menu .mdi {
+    width: 18px;
+}
+.dropdown-menu .mdi::before {
+    position: relative;
+    top: 4px;
+    left: -8px;
+}
+.nav .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.navbar .navbar-toggle .mdi::before {
+    position: relative;
+    top: 4px;
+    color: #FFF;
+}
+.breadcrumb .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+.breadcrumb a:hover span {
+    text-decoration: underline;
+}
+.alert .mdi::before {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+.input-group-addon .mdi::before {
+    position: relative;
+    top: 3px;
+}
+.navbar-brand .mdi::before {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.list-group-item .mdi::before {
+    position: relative;
+    top: 3px;
+    left: -3px
+}

@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1024px) {
+    .task1container, .task2, .task3Container, .task-4, .task5container {
+        height: 100vh;
+    }
+
+    .links {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .oMenu, .lMenu, #hidden {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .tasks {
+        width: 100vw;
+    }
+
+    .links {
+        margin: 0;
+        padding: 4px 10px 4px 1px;
+        border: 1px solid black;
+        text-decoration: none;
+    }
+
+    .oMenu {
+        display: inherit;
+    }
+}
+

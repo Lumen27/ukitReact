@@ -1,0 +1,59 @@
+.menu, .tasks {
+    height: 100vh;
+    border: 1px solid black;
+    border-left: 3px solid black;
+}
+
+.menu {
+    cursor: default;
+}
+
+.tasks {
+    overflow-y: scroll
+}
+
+.links {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.hMenu {
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 210px;
+    height: 150px;
+    border-radius: 25px;
+    z-index: 100;
+    margin: 10px 20px 0 0;
+}
+
+.oMenu {
+    float: right;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.lMenu {
+    width: 150px;
+    background-color: white;
+}
+
+#hidden {
+    display: none;
+}
+
+.menuIcon {
+    margin-left: 12px;
+}
+
+
