@@ -1,7 +1,6 @@
 .menu, .tasks {
     height: 100vh;
     border: 1px solid black;
-    border-left: 3px solid black;
 }
 
 .menu {
@@ -9,7 +8,8 @@
 }
 
 .tasks {
-    overflow-y: scroll
+    overflow-y: scroll;
+    border-left: 3px solid black;
 }
 
 .links {
@@ -20,6 +20,14 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color: #D8D8D8;
 }
 
 .hMenu {

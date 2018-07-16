@@ -44,6 +44,7 @@ export default class Task5 extends Component {
             <div className="task5container">
                 <h1>Задание 5</h1>
                 <div className="task5">
+                    <h1 style={{fontFamily: "sans-serif"}}>Todo List</h1>
                     <TodoForm onFormSubmit={this.updateItems} />
                     <TodoList items={this.state.items} onDelete={this.deleteItem} />
                 </div>

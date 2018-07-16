@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 import {Grid} from 'react-bootstrap';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
-
 import "./Navigation.css";
 import Task1 from "./Task1";
 import Task2 from "./Task2";
 import Task3 from "./Task3";
 import Task4 from "./Task4";
 import Task5 from "./Task5";
-
 import ScrollIntoView from 'react-scroll-into-view'
+import {Panel} from 'react-bootstrap';
 
 export default class Navigation extends Component {
     constructor(props) {
@@ -40,22 +39,32 @@ export default class Navigation extends Component {
                         <div>
                             <h2>Меню</h2>
                             <ScrollIntoView selector="#task1">
-                                <p className="links">Задание 1</p>
+                                <Panel className="links">
+                                    <Panel.Body>Задание 1</Panel.Body>
+                                </Panel>
                             </ScrollIntoView>
 
                             <ScrollIntoView selector="#task2">
-                                <p className="links">Задание 2</p>
+                                <Panel className="links">
+                                    <Panel.Body>Задание 2</Panel.Body>
+                                </Panel>
                             </ScrollIntoView>
 
                             <ScrollIntoView selector="#task3">
-                                <p className="links">Задание 3</p>
+                                <Panel className="links">
+                                    <Panel.Body>Задание 3</Panel.Body>
+                                </Panel>
                             </ScrollIntoView>
 
                             <ScrollIntoView selector="#task4">
-                                <p className="links">Задание 4</p>
+                                <Panel className="links">
+                                    <Panel.Body>Задание 4</Panel.Body>
+                                </Panel>
                             </ScrollIntoView>
                             <ScrollIntoView selector="#task5">
-                                <p className="links">Задание 5</p>
+                                <Panel className="links">
+                                    <Panel.Body>Задание 5</Panel.Body>
+                                </Panel>
                             </ScrollIntoView>
                         </div>
                     </Col>

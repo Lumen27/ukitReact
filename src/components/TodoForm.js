@@ -34,7 +34,7 @@ export default class TodoForm extends Component {
                 <form  onSubmit={this.handleSubmit}>
                     <div className="form-group col-sm-10">
                         <input type='text' className="todoField form-control" placeholder="Добавить..." ref='item' onChange={this.onChange} value={this.state.item}/>
-                        <input type='submit' className="btn btn-default" style={{"float":"left","marginLeft":"5px"}} value='Добавить'/>
+                        <input type='submit' className="btn btn-default btnAdd" value='Добавить'/>
                     </div>
                 </form>
             </div>

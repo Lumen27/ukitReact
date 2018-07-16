@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Panel} from 'react-bootstrap';
 
 export default class TodoListItem extends Component {
 
@@ -25,8 +26,22 @@ export default class TodoListItem extends Component {
         if(!this.props.children.isDone)
             _style ="none";
         return (
-            <li data-id={this.props.value}
-                key={this.props.value}><button type="button" className="close" aria-hidden="true" onClick={this.RemoveHandler}>&times;</button><input type="checkbox" onChange={this.changeHandler} defaultChecked={this.props.children.isDone} /><span style={{"textDecoration": _style}}>{this.props.children.item}</span></li>
+            <li data-id={this.props.value} key={this.props.value}>
+                <Panel className="panelContainer">
+                    <Panel.Body>
+                        <button type="button" className="close" aria-hidden="true" onClick={this.RemoveHandler}>&times;</button>
+                        <div className="pretty p-icon p-bigger" style={{display: "inline", float: "left"}}>
+                            <input type="checkbox" onChange={this.changeHandler} defaultChecked={this.props.children.isDone} />
+                            <div className="state p-primary-o">
+                                <i className="icon mdi mdi-check mdi-18px"  style={{color: "black"}}></i>
+                                <label></label>
+                            </div>
+                        </div>
+                        <span style={{"textDecoration": _style}} className="listItem">{this.props.children.item}</span>
+                    </Panel.Body>
+                </Panel>
+
+            </li>
         );
     }
 }

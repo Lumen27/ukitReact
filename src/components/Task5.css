@@ -12,16 +12,42 @@ ul {
 
 li {
     margin-left: -40px;
-    width: 525px;
+    width: 529px;
 }
 
 .todoField{
-    padding-left: 5px;
+    padding: 20px 0 20px 5px;
     font-size: 20px;
     width:80%;
     float:left;
 }
 
+.panelContainer {
+    margin: 0;
+}
 
+.btnAdd{
+    float:left;
+    margin-left:5px;
+    padding: 9px 20px;
+    font-size: 16px;
+    color: #333;
+}
 
+.close {
+    font-size: 25px;
+}
+
+.pretty {
+    margin-top: 6px;
+}
+
+.listItem {
+    font-size: 20px;
+    color: #333;
+}
+
+.panelContainer:hover {
+    background-color: #D8D8D8;
+}
 
