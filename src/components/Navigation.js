@@ -14,13 +14,20 @@ import {Panel} from 'react-bootstrap';
 export default class Navigation extends Component {
     constructor(props) {
         super(props);
-
-        this.handleToggle = this.handleToggle.bind(this);
+        this.state ={
+            active: 1,
+        };
+        this.toggleClass = this.toggleClass.bind(this);
     }
 
     componentDidMount() {
         this.handleToggle()
     }
+
+    toggleClass(x) {
+        let currentState = x;
+        this.setState({ active: currentState });
+    };
 
     handleToggle() {
         let x = document.getElementById("hidden");
@@ -39,31 +46,31 @@ export default class Navigation extends Component {
                         <div>
                             <h2>Меню</h2>
                             <ScrollIntoView selector="#task1">
-                                <Panel className="links">
-                                    <Panel.Body>Задание 1</Panel.Body>
+                                <Panel className={this.state.active === 1 ? "links-active" : "links"}>
+                                    <Panel.Body onClick={() => {this.toggleClass(1)}}>Задание 1</Panel.Body>
                                 </Panel>
                             </ScrollIntoView>
 
                             <ScrollIntoView selector="#task2">
-                                <Panel className="links">
-                                    <Panel.Body>Задание 2</Panel.Body>
+                                <Panel className={this.state.active === 2 ? "links-active" : "links" }>
+                                    <Panel.Body onClick={() => {this.toggleClass(2)}}>Задание 2</Panel.Body>
                                 </Panel>
                             </ScrollIntoView>
 
                             <ScrollIntoView selector="#task3">
-                                <Panel className="links">
-                                    <Panel.Body>Задание 3</Panel.Body>
+                                <Panel className={this.state.active === 3 ? "links-active" : "links" }>
+                                    <Panel.Body onClick={() => {this.toggleClass(3)}}>Задание 3</Panel.Body>
                                 </Panel>
                             </ScrollIntoView>
 
                             <ScrollIntoView selector="#task4">
-                                <Panel className="links">
-                                    <Panel.Body>Задание 4</Panel.Body>
+                                <Panel className={this.state.active === 4 ? "links-active" : "links" }>
+                                    <Panel.Body onClick={() => {this.toggleClass(4)}}>Задание 4</Panel.Body>
                                 </Panel>
                             </ScrollIntoView>
                             <ScrollIntoView selector="#task5">
-                                <Panel className="links">
-                                    <Panel.Body>Задание 5</Panel.Body>
+                                <Panel className={this.state.active === 5 ? "links-active" : "links" }>
+                                    <Panel.Body onClick={() => {this.toggleClass(5)}}>Задание 5</Panel.Body>
                                 </Panel>
                             </ScrollIntoView>
                         </div>
