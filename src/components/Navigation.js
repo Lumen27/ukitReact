@@ -25,8 +25,7 @@ export default class Navigation extends Component {
     }
 
     toggleClass(x) {
-        let currentState = x;
-        this.setState({ active: currentState });
+        this.setState({ active: x });
     };
 
     handleToggle() {
