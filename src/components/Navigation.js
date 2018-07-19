@@ -82,22 +82,22 @@ export default class Navigation extends Component {
                             </div>
                             <div className="lMenu" id="hidden">
                                 <ScrollIntoView selector="#task1">
-                                    <p className="links">Задание 1</p>
+                                    <p className="links hlink">Задание 1</p>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#task2">
-                                    <p className="links">Задание 2</p>
+                                    <p className="links hlink">Задание 2</p>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#task3">
-                                    <p className="links">Задание 3</p>
+                                    <p className="links hlink">Задание 3</p>
                                 </ScrollIntoView>
 
                                 <ScrollIntoView selector="#task4">
-                                    <p className="links">Задание 4</p>
+                                    <p className="links hlink">Задание 4</p>
                                 </ScrollIntoView>
                                 <ScrollIntoView selector="#task5">
-                                    <p className="links">Задание 5</p>
+                                    <p className="links hlink">Задание 5</p>
                                 </ScrollIntoView>
                             </div>
                         </div>

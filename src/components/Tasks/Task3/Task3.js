@@ -21,25 +21,25 @@ export default class Task3 extends Component {
                 <h2 style={{display: "inline-block"}}>Задание 3</h2>
                 <div className="t3cont">
                     <Row className="tooltips">
-                        <Col sm={2} className="keks">
+                        <Col sm={2} className="col-tool">
                             <Tooltip placement="left" className="in" id="tooltip-left">
                                 Tooltip on the left
                             </Tooltip>
                         </Col>
 
-                        <Col sm={2} className="keks">
+                        <Col sm={2} className="col-tool">
                             <Tooltip placement="top" className="in" id="tooltip-top"  positionTop="-2px">
                                 Tooltip on the top
                             </Tooltip>
                         </Col>
 
-                        <Col sm={2} className="keks">
+                        <Col sm={2} className="col-tool">
                             <Tooltip placement="bottom" className="in" id="tooltip-bottom"  positionTop="-8px">
                                 Tooltip on the bottom
                             </Tooltip>
                         </Col>
 
-                        <Col sm={2} className="keks">
+                        <Col sm={2} className="col-tool">
                             <Tooltip placement="right" className="in" id="tooltip-right"  positionTop="-20px">
                                 Tooltip on the right
                             </Tooltip>

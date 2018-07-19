@@ -8,7 +8,7 @@
         color: blue;
     }
 
-    .oMenu, .lMenu, #hidden {
+    .oMenu, .lMenu, #hidden, .hlink {
         display: none;
     }
 }
@@ -43,7 +43,7 @@
         text-align:center;
     }
 
-    .keks {
+    .col-tool {
         display: inline-block;
         margin: 0 5vw;
     }
