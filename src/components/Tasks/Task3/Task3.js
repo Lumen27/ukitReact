@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import "./Task3.css";
-
-
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
 import {Tooltip} from 'react-bootstrap';
