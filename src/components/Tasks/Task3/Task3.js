@@ -19,39 +19,41 @@ export default class Task3 extends Component {
         return(
             <div className="task3Container">
                 <h2 style={{display: "inline-block"}}>Задание 3</h2>
-                <Row className="tooltips">
-                    <Col sm={2}>
-                        <Tooltip placement="left" className="in" id="tooltip-left">
-                            Tooltip on the left
-                        </Tooltip>
-                    </Col>
+                <div className="t3cont">
+                    <Row className="tooltips">
+                        <Col sm={2} className="keks">
+                            <Tooltip placement="left" className="in" id="tooltip-left">
+                                Tooltip on the left
+                            </Tooltip>
+                        </Col>
 
-                    <Col sm={2}>
-                        <Tooltip placement="top" className="in" id="tooltip-top"  positionTop="-2px">
-                            Tooltip on the top
-                        </Tooltip>
-                    </Col>
+                        <Col sm={2} className="keks">
+                            <Tooltip placement="top" className="in" id="tooltip-top"  positionTop="-2px">
+                                Tooltip on the top
+                            </Tooltip>
+                        </Col>
 
-                    <Col sm={2}>
-                        <Tooltip placement="bottom" className="in" id="tooltip-bottom"  positionTop="-8px">
-                            Tooltip on the bottom
-                        </Tooltip>
-                    </Col>
+                        <Col sm={2} className="keks">
+                            <Tooltip placement="bottom" className="in" id="tooltip-bottom"  positionTop="-8px">
+                                Tooltip on the bottom
+                            </Tooltip>
+                        </Col>
 
-                    <Col sm={2}>
-                        <Tooltip placement="right" className="in" id="tooltip-right"  positionTop="-20px">
-                            Tooltip on the right
-                        </Tooltip>
-                    </Col>
-                </Row>
+                        <Col sm={2} className="keks">
+                            <Tooltip placement="right" className="in" id="tooltip-right"  positionTop="-20px">
+                                Tooltip on the right
+                            </Tooltip>
+                        </Col>
+                    </Row>
 
-                <Row className="login">
-                    <Col sm={7} style={{textAlign: "center"}}>
-                        <OverlayTrigger  placement="top" overlay={tooltip} delayShow={300} delayHide={150}>
-                            <Button>Войти в систему</Button>
-                        </OverlayTrigger>
-                    </Col>
-                </Row>
+                    <Row className="login">
+                        <Col sm={7} style={{textAlign: "center"}}>
+                            <OverlayTrigger  placement="top" overlay={tooltip} delayShow={300} delayHide={150}>
+                                <Button>Войти в систему</Button>
+                            </OverlayTrigger>
+                        </Col>
+                    </Row>
+                </div>
             </div>
         )
     }
